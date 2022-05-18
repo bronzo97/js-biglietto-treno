@@ -12,11 +12,11 @@ const distance = document.getElementById("distance");
 distance.innerHTML = `${typeDistance}`;
 
 if(typeAge < 18 ) {
-    ticketPrice = ((ticketPrice) - (ticketPrice * 0.2));
+    ticketPrice = ((ticketPrice) - (ticketPrice * 0.2).toFixed(2));
 } else if (typeAge > 65 ) {
-    ticketPrice = ((ticketPrice) - (ticketPrice * 0.4));
+    ticketPrice = ((ticketPrice) - (ticketPrice * 0.4).toFixed(2));
 } else {
-    ticketPrice = ticketPrice;
+    ticketPrice = ticketPrice.toFixed(2);
 }
     
 
