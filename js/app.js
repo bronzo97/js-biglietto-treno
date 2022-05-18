@@ -13,7 +13,13 @@ distance.innerHTML = `${typeDistance}`;
 
 if(typeAge < 18 ) {
     ticketPrice = ((ticketPrice) - (ticketPrice * 0.2));
+} else if (typeAge > 65 ) {
+    ticketPrice = ((ticketPrice) - (ticketPrice * 0.4));
+} else {
+    ticketPrice = ticketPrice;
 }
+    
+
 
 const price = document.getElementById("price");
 price.innerHTML = `${ticketPrice}`;
