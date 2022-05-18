@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 
-.train {
-    background-image: url("../img/train.jpeg");
+.web-app-container {
     height: 100vh;
+}
+
+.train {
+    height: 100%;
+    background-image: url("../img/train.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
